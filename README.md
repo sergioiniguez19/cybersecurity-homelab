@@ -7,5 +7,6 @@
 
 <hr>
 
-<h4> Phase 1: Simple Network with Wazuh Server</h4>
+<h4><a> Phase 1: Simple Network with Wazuh Server </a></h4>
 
+<img width="454" height="350" alt="Final drawio" src="https://github.com/user-attachments/assets/680e520d-8d00-4764-99e8-3b4605154a7b" />
