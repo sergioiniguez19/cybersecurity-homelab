@@ -2,7 +2,7 @@
 
 | VM    | RAM |  CPU (cores) | DISK |
 | -------- | ------- | -------- | ------- |
-| Ubuntu Server 22.04  | 4GB   |  2    |  55GB    |
+| Ubuntu Server 22.04  | 8GB   |  4    |  50GB    |
 
 ## Wazuh Main Components
 
@@ -12,3 +12,16 @@ Before installing **Wazuh**, we have to understand its components.
 2. **Wazuh server**: Analyzes data received from the Wazuh agents.
 3. **Wazuh dashboard**: Is the **GUI** for data visualization and analysis.
 4. **Wazuh agent**: It is installed on the **endpoints** such as laptops, servers ... They provide threat detection, and response capabilities.
+
+## Wazuh VM Installation
+
+First, we need to download the ova file from the  [wazuh site](https://documentation.wazuh.com/current/deployment-options/virtual-machine/virtual-machine.html).
+Import the ova
+
+![alt text](image-9.png)
+
+Then we need to configure the network, in my case with NAT Network. And configure an IP address.
+
+![alt text](image-10.png)
+
+![alt text](image-11.png)
