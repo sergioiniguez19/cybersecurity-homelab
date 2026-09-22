@@ -135,7 +135,7 @@ This is where Active Response becomes useful.
 
 ### Configuring Automatic Response
 
-On the Wazuh manager, we add an active-response block. We specify the rule ID and the command to execute. In this case, the command is `firewall-drop`, which blocks the source IP address for a configured period of time.
+On the Wazuh manager, we add an active-response block. We specify the rule ID and the command to execute. In this case, the command is `firewall-drop`, which blocks the source IP address for a configured period of time. The rule ID belongs to the Brute Force alert of SSH on the Wazuh dashboard.
 
 ![Active response configuration](./images/image-11.png)
 
@@ -152,11 +152,14 @@ This enables automatic blocking based on the configured rule.
 Running the attack on Kali
 
 ![Attack from Kali](./images/image-13.png)
-![SSH brute-force attempts](./images/image-14.png)
+
 
 On the Ubuntu Server, the firewall blocks the malicious IP address.
 
 ![iptables rule](./images/image-15.png)
+
+On Kali, there is no connectivity with the Ubuntu Server
+![SSH brute-force attempts](./images/image-14.png)
 
 The Wazuh dashboard shows the corresponding security alerts and the response triggered by the manager.
 
